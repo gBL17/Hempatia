@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="parceriaStyle.css" />
+    <script src="scripts/email.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("R7m4rHYQUaEXSMj9P");
+      })();
+    </script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700;900&display=swap");
+    </style>
+    <title>Hempatia - Parcerias</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="content">
+        <header class="navContainer">
+          <ul class="navBar">
+            <li class="navItem">
+              <a class="navItemLink" href="home.html">Home</a>
+            </li>
+            <li class="navItem">
+              <a class="navItemLink" href="parcerias.html">Seja um Parceiro</a>
+            </li>
+            <li class="navItem">
+              <a class="navItemLink" href="quemSomos.html">Quem Somos</a>
+            </li>
+            <li class="navItem">
+              <a class="navItemLink" href="contato.html">Contatos</a>
+            </li>
+          </ul>
+        </header>
+        <main class="mainContainer">
+          <div class="textContainer">
+            <div class="textContent">
+              <div>
+                <span>Seja um</span>
+                <span style="color: #ac24dc">Parceiro</span>
+              </div>
+              <div>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="inputContainer">
+            <div class="inputContent">
+              <form class="inputGroup" action="#">
+                <input id="fromName" placeholder="   Nome" type="text" />
+                <input id="email" placeholder="   E-mail" type="email" />
+                <textarea
+                  id="msg"
+                  placeholder="   Mensagem"
+                  rows="5"
+                ></textarea>
+              </form>
+              <div>
+                <input
+                  onclick="sendMail()"
+                  id="sendButton"
+                  type="button"
+                  value="ENVIAR"
+                />
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>
