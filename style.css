@@ -6,7 +6,11 @@
 
 .container {
   display: flex;
+}
+
+.background {
   background-image: url("images/Fundo.png");
+  background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
@@ -16,47 +20,77 @@
 .content {
   display: flex;
   flex-direction: column;
-  height: 95%;
-  width: 80%;
+  height: 100vh;
+  width: 100%;
   margin: 2% auto;
   justify-content: space-between;
-}
-
-.navContainer {
-  display: flex;
-  width: 70%;
-  height: 3rem;
-  margin: 0 auto;
-}
-
-.navBar {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: space-between;
+  background-color: #003629;
+  margin-top: 100vh;
   align-items: center;
 }
 
-.navItem {
-  list-style-type: none;
-
-  --c: linear-gradient(#fff 0 0); /* update the color here */
-
-  padding-bottom: 0.15em;
-  background: var(--c), var(--c);
-  background-size: 0.3em 0.1em;
-  background-position: 50% 100%;
-  background-repeat: no-repeat;
-  transition: 0.3s linear, background-size 0.3s 0.2s linear;
+.displayHolder {
+  margin-top: 2%;
+  height: 80%;
+  width: 70%;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: #002b2130;
+  align-items: center;
+  border-radius: 15px;
 }
 
-.navItem:hover {
-  background-size: 40% 0.1em;
-  background-position: 10% 100%, 90% 100%;
+.display4x4 {
+  background-color: aqua;
+  width: 47%;
+  height: 44%;
+  background-size: 100% 100%;
+}
+.position1 {
+  background-image: url("images/Hempatia.png");
+}
+.position2 {
+  background-image: url("images/Contato.png");
+}
+.position3 {
+  background-image: url("images/quemSomos.png");
+}
+.position4 {
+  background-image: url("images/Seja_Um_Associado.png");
 }
 
-.navItemLink {
-  text-decoration: none;
-  color: white;
-  font-size: 25px;
+fieldset {
+  border: none;
+  justify-content: space-evenly;
+  border-radius: 40px;
+  background-color: #ab24dc8c;
+  width: 80vw;
+  height: 10vh;
+  margin-bottom: 1.5%;
+}
+
+legend {
+  color: #71c305c2;
+  margin-left: 3%;
+  transform: translate(0, -12%);
+  font-weight: bold;
+  font-size: 2rem;
+  -webkit-text-stroke: 0.75px #000;
+}
+
+.contatoField {
+  background-color: #71c305c2;
+  width: 28%;
+  height: 100%;
+  border-radius: 20px;
+  transform: translate(0, -20%);
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.pointer:hover {
+  cursor: pointer;
 }
