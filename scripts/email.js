@@ -1,7 +1,8 @@
 function sendMail(params) {
   var tempParams = {
+    selector: document.getElementById("selector").value,
     from_name: document.getElementById("fromName").value,
-    to_name: document.getElementById("email").value,
+    to_name: document.getElementById("tel").value,
     message: document.getElementById("msg").value,
   };
 
@@ -12,7 +13,8 @@ function sendMail(params) {
       alert("Mensagem de sucesso!");
     });
 
+  selector.value = "";
   fromName.value = "";
-  email.value = "";
+  tel.value = "";
   msg.value = "";
 }
