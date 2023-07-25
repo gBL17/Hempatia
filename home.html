@@ -2,15 +2,37 @@
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="stylesheet" href="style.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/inputmask@5.0.6/dist/inputmask.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("R7m4rHYQUaEXSMj9P");
+      })();
+    </script>
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700;900&display=swap");
     </style>
     <title>Hempatia</title>
   </head>
   <body>
+<<<<<<< HEAD
     <div class="container background">
       <div class="container content">
         <div class="container displayHolder">
@@ -35,7 +57,171 @@
             <div class="container contatoField"></div>
           </fieldset>
         </div>
+=======
+<<<<<<< Updated upstream
+    <div class="container">
+      <div class="content">
+        <header class="navContainer">
+          <ul class="navBar">
+            <li class="navItem">
+              <a class="navItemLink" href="home.html">Home</a>
+            </li>
+            <li class="navItem">
+              <a class="navItemLink" href="parcerias.html">Seja um Parceiro</a>
+            </li>
+            <li class="navItem">
+              <a class="navItemLink" href="quemSomos.html">Quem Somos</a>
+            </li>
+            <li class="navItem">
+              <a class="navItemLink" href="contato.html">Contatos</a>
+            </li>
+          </ul>
+        </header>
+=======
+    <section class="hero-section container-fluid"></section>
+    <section class="container-fluid py-5 who-are-we font-desktop p-5">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="video">
+            <iframe
+              width="100%"
+              height="315"
+              src="https://www.youtube.com/embed/RH8q-Xj2nH4"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="text-field">
+            <h2><strong>Lorem Ipsum</strong></h2>
+            <p>
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum."
+            </p>
+          </div>
+        </div>
+>>>>>>> Stashed changes
+>>>>>>> alpha
       </div>
-    </div>
+    </section>
+    <section class="container-fluid form-section d-flex align-items-center p-5">
+      <div class="row d-flex">
+        <div class="col-md-7">
+          <div class="row">
+            <div class="col-md-12 d-flex justify-content-center m-4">
+              <img src="images/hp.png" alt="" />
+            </div>
+          </div>
+          <div id="carouselExampleFade" class="carousel slide carousel-fade d-none d-md-block" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="images/Hempatia.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images/quemSomos.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images/Seja_Um_Associado.png" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+        <div
+          class="col-md-5 d-flex justify-content-center align-items-center form-container p-sm-3"
+        >
+          <div class="text-center form-input">
+            <h2 class="mb-5">Entre em contato conosco</h2>
+            <form>
+              <div class="mb-5 select">
+                  <select id="selector" required>
+                      <option value=""></option>
+                      <option value="1">Marque a sua consulta</option>
+                      <option value="2">Seja um Paciente</option>
+                      <option value="3">Seja um Associado</option>
+                  </select>
+              </div>
+              <div class="mb-5">
+                <input
+                  type="text"
+                  class="form-control input"
+                  id="fromName"
+                  name="nome"
+                  placeholder="Nome"
+                  required
+                />
+              </div>
+              <div class="mb-5">
+                <input
+                  type="tel"
+                  class="form-control input"
+                  id="tel"
+                  name="telefone"
+                  placeholder="Telefone"
+                  required
+                />
+              </div>
+              <div class="mb-5">
+                <textarea
+                  class="form-control"
+                  id="msg"
+                  name="mensagem"
+                  rows="8"
+                  placeholder="Mensagem"
+                  required
+                ></textarea>
+              </div>
+              <input class="btn btn-primary" type="button" id="sendButton" value="Enviar" onclick="sendMail()" disabled></input>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="contact text-light py-2 border-top border-dark border-5">
+      <div class="container text-center">
+        <div class="contactContent d-flex justify-content-evenly">
+          <a
+            href="https://www.instagram.com/hempatiabr/"
+            class="text-light me-3"
+          >
+            <i class="bi bi-instagram"></i>
+          </a>
+          <a href="https://www.tiktok.com/@hempatiabr" class="text-light me-3">
+            <i class="bi bi-tiktok"></i>
+          </a>
+          <a href="#" class="text-light me-3">
+            <i class="bi bi-youtube"></i>
+          </a>
+          <a href="#" class="text-light me-3">
+            <i class="bi bi-phone" id="phoneLink"></i>
+          </a>
+          <a href="#" class="text-light me-3">
+            <i class="bi bi-envelope" id="emailLink"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="scripts/buttonEnable.js"></script>
+    <script src="scripts/inputMask.js"></script>
+    <script src="scripts/email.js"></script>
+    <script src="scripts/copyToClipboard.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
   </body>
 </html>
