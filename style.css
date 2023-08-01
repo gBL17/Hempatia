@@ -3,6 +3,7 @@
   padding: 0;
 }
 
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 .container {
   display: flex;
@@ -13,9 +14,10 @@
   background-attachment: fixed;
   background-repeat: no-repeat;
 =======
+=======
+>>>>>>> alpha
 .hero-section {
   background-image: url("images/Fundo.png");
->>>>>>> Stashed changes
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -68,7 +70,6 @@
   width: 100%;
 }
 
-<<<<<<< Updated upstream
 .content {
   display: flex;
   flex-direction: column;
@@ -112,6 +113,7 @@
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 fieldset {
   border: none;
   justify-content: space-evenly;
@@ -131,6 +133,8 @@ legend {
   -webkit-text-stroke: 0.75px #000;
 }
 
+=======
+>>>>>>> alpha
 .contatoField {
   background-color: #71c305c2;
   width: 28%;
@@ -139,6 +143,7 @@ legend {
   transform: translate(0, -20%);
 }
 
+<<<<<<< HEAD
 img {
   width: 100%;
   height: auto;
@@ -147,11 +152,17 @@ img {
 .pointer:hover {
   cursor: pointer;
 =======
+=======
+.pointer:hover {
+  cursor: pointer;
+}
+
+>>>>>>> alpha
 .navItemLink {
   text-decoration: none;
   color: white;
   font-size: 25px;
-=======
+}
 .carousel-inner {
   border-radius: 15px;
 }
@@ -166,22 +177,19 @@ img {
 }
 
 select {
-  /* Reset Select */
   appearance: none;
   outline: 10px red;
   border: 0;
   box-shadow: none;
-  /* Personalize */
+
   flex: 1;
   padding: 0 1em;
   cursor: pointer;
->>>>>>> Stashed changes
 }
-/* Remove IE arrow */
+
 select::-ms-expand {
   display: none;
 }
-/* Custom Select wrapper */
 .select {
   position: relative;
   display: flex;
@@ -189,7 +197,7 @@ select::-ms-expand {
   border-radius: 0.25em;
   overflow: hidden;
 }
-/* Arrow */
+
 .select::after {
   content: "\25BC";
   position: absolute;
@@ -200,7 +208,6 @@ select::-ms-expand {
   transition: 0.25s all ease;
   pointer-events: none;
 }
-/* Transition */
 .select:hover::after {
   color: #f1a20b;
 }
@@ -222,24 +229,24 @@ select::-ms-expand {
 }
 
 .contact {
-  background-color: #002e23;
+  background-color: #003629;
 }
 
 .contactContent i {
-  font-size: 45px;
+  font-size: 35px;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 950px) {
   .video {
     margin-bottom: 10px;
   }
 
   .font-desktop h2 {
-    font-size: 20px;
+    font-size: 18px;
   }
 
   .text-field p {
-    font-size: 16px;
+    font-size: 12px;
   }
 
   .img-fluid {
@@ -247,7 +254,39 @@ select::-ms-expand {
   }
 
   .contactContent i {
-    font-size: 32px;
+    font-size: 25px;
+  }
+
+  .form-container {
+    background-color: #f1a10ba6;
+  }
+
+  .input {
+    height: 2.5rem;
+  }
+
+  .form-container {
+    min-height: 550px;
+    margin: 0 auto 20px;
+    width: 95%;
+  }
+
+  .hpImage {
+    width: 50%;
+  }
+}
+
+@media (max-width: 1280px) {
+  .input {
+    height: 2rem;
+  }
+
+  .text-field h2 {
+    font-size: 22px;
+  }
+
+  .text-field p {
+    font-size: 18px;
   }
 >>>>>>> alpha
 }
