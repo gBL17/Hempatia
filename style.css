@@ -3,15 +3,6 @@
   padding: 0;
 }
 
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-.container {
-  display: flex;
-  background-image: url("images/Fundo.png");
-  background-repeat: no-repeat;
-=======
-=======
->>>>>>> Stashed changes
 .hero-section {
   background-image: url("images/Fundo.png");
   background-size: cover;
@@ -66,8 +57,6 @@
   width: 100%;
 }
 
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
 .content {
   display: flex;
   flex-direction: column;
@@ -108,7 +97,8 @@
 .navItem:hover {
   background-size: 40% 0.1em;
   background-position: 10% 100%, 90% 100%;
-=======
+}
+
 .contatoField {
   background-color: #71c305c2;
   width: 28%;
@@ -119,7 +109,6 @@
 
 .pointer:hover {
   cursor: pointer;
->>>>>>> Stashed changes
 }
 
 .navItemLink {
