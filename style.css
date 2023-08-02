@@ -3,8 +3,6 @@
   padding: 0;
 }
 
-<<<<<<< HEAD
-<<<<<<< Updated upstream
 .container {
   display: flex;
 }
@@ -13,9 +11,8 @@
   background-image: url("images/Fundo.png");
   background-attachment: fixed;
   background-repeat: no-repeat;
-=======
-=======
->>>>>>> alpha
+}
+
 .hero-section {
   background-image: url("images/Fundo.png");
   background-size: cover;
@@ -112,8 +109,6 @@
   background-image: url("images/Seja_Um_Associado.png");
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 fieldset {
   border: none;
   justify-content: space-evenly;
@@ -133,8 +128,6 @@ legend {
   -webkit-text-stroke: 0.75px #000;
 }
 
-=======
->>>>>>> alpha
 .contatoField {
   background-color: #71c305c2;
   width: 28%;
@@ -143,21 +136,13 @@ legend {
   transform: translate(0, -20%);
 }
 
-<<<<<<< HEAD
-img {
-  width: 100%;
-  height: auto;
-}
-
 .pointer:hover {
   cursor: pointer;
-=======
-=======
-.pointer:hover {
-  cursor: pointer;
+  .pointer:hover {
+    cursor: pointer;
+  }
 }
 
->>>>>>> alpha
 .navItemLink {
   text-decoration: none;
   color: white;
@@ -288,5 +273,4 @@ select::-ms-expand {
   .text-field p {
     font-size: 18px;
   }
->>>>>>> alpha
 }
