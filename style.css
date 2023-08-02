@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: "Poppins";
 }
 
 .hero-section {
@@ -12,40 +13,84 @@
   border-bottom: 5px solid black;
 }
 
-.who-are-we {
-  background: #003629;
+.online-appointment {
+  background-color: #ac24dc;
+  border-radius: 35px;
+}
+
+.contact-us {
+  background-color: #ac036c;
+  border-radius: 35px;
+}
+
+.section-default {
+  background: #e3e3db;
   width: 100%;
-  border-bottom: 5px solid #f1a20b;
+  min-width: 50vh;
+}
+
+.sizing {
+  min-height: 50vh;
+}
+
+.pink-border {
+  border: 5px solid #8a55e1;
+}
+
+.courses {
+  border: solid white 5px;
 }
 
 .video {
-  position: relative;
-  padding-bottom: 56.25%; /* Proporção para criar um aspecto responsivo do vídeo (16:9) */
-  height: 0;
-  overflow: hidden;
+  min-height: 80vh;
 }
 
-.video iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
+.video-shadow {
+  position: relative;
+  background-color: #003629;
   height: 100%;
 }
 
+.video-content {
+  position: absolute;
+  background-color: #72c305;
+  height: 100%;
+  width: 100%;
+  top: 5%;
+  right: 2%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.video-content iframe {
+  aspect-ratio: 16/9;
+  width: 100%;
+}
+
 .text-field {
-  background-color: #002e23;
-  color: white;
+  color: #002e23;
   padding: 20px;
   border-radius: 10px;
 }
 
 .text-field h2 {
   font-size: 50px;
+  text-align: center;
 }
 
 .text-field p {
-  font-size: 25px;
+  font-size: 30px;
+}
+
+.form-online-appointment {
+  color: #002e23;
+  font-weight: bold;
+}
+
+.placeholder {
+  background-color: #72c305;
+  margin-left: 5%;
 }
 
 .form-section {
@@ -143,6 +188,7 @@ select {
 select::-ms-expand {
   display: none;
 }
+
 .select {
   position: relative;
   display: flex;
@@ -171,6 +217,10 @@ select::-ms-expand {
 
 .form-input {
   width: 80%;
+}
+
+.radio-input {
+  color: white;
 }
 
 .btn {
