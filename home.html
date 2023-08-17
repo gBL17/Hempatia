@@ -2,24 +2,8 @@
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
-      crossorigin="anonymous"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
-    />
-    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <script src="https://cdn.jsdelivr.net/npm/inputmask@5.0.6/dist/inputmask.min.js"></script>
     <script
       type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
@@ -29,18 +13,31 @@
         emailjs.init("R7m4rHYQUaEXSMj9P");
       })();
     </script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700;900&display=swap");
     </style>
+    <link rel="stylesheet" href="style.css" />
     <title>Hempatia</title>
   </head>
   <body>
     <section class="hero-section"></section>
-    <section class="container-fluid section-default font-desktop p-5">
-      <div class="row p-5">
-        <div class="col-md-6 video">
-          <div class="video-shadow ml-xxl-5">
-            <div class="video-content p-3">
+    <section class="who-are-we container-fluid d-flex justify-content-around">
+      <div class="row d-flex align-items-center justify-content-around">
+        <div
+          class="col-md-5 video-content d-flex justify-content-center align-items-center"
+        >
+          <div class="video-shadow d-flex align-items-center">
+            <div class="video d-flex align-items-center justify-content-center">
               <iframe
                 src="https://www.youtube.com/embed/s25o9P5ehHo"
                 title="YouTube video player"
@@ -51,172 +48,192 @@
             </div>
           </div>
         </div>
-        <div class="col-md-6">
-          <div class="text-field">
-            <h2><strong>VÍDEO MANIFESTO</strong></h2>
-            <br />
-            <p>
-              Fundada por duas mulheres comprometidas em proporcionar uma
-              alternativa segura e eficar de tratamento para os pacientes.
-            </p>
-            <br />
-            <p>
-              A HemPatia é uma associação sem fins lucrativos promotora da
-              educação e da conscientização da sua sociedade.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="section-default container-fluid py-5 font-desktop p-5">
-      <div
-        class="pink-border p-5 d-flex flex-column justify-content-between sizing"
-      >
-        <div>
-          <div class="d-flex justify-content-between align-items-baseline">
-            <h2>Educação Canábica</h2>
-            <div>HEMPATIA</div>
-          </div>
+        <div
+          class="col-md-5 text-field d-flex flex-column justify-content-center"
+        >
+          <h2><strong>Vídeo Manifesto</strong></h2>
           <br />
           <p>
-            A HemPatia é uma associação canábica comprometida com a promoção da
-            educação e da conscientização da sua sociedade, nossa missão vai
-            além do simples ensino, estamos determinados a impactar e
-            transformar a realidade proibicionista e não regulamentada que
-            enfrentamos hoje no Brasil
+            Fundada por duas mulheres comprometidas em proporcionar uma
+            alternativa segura e eficaz de tratamento para os pacientes.
+          </p>
+          <br />
+          <p>
+            A Hempatia é uma associação sem fins lucrativos promotora da
+            educação e da conscientização da sua sociedade.
           </p>
         </div>
-        <div class="d-flex justify-content-between mt-4">
-          <div class="courses p-3">
-            <h4>E-book</h4>
-          </div>
-          <div class="courses p-3">
-            <h4>Curso On-line</h4>
-          </div>
-          <div class="courses p-3">
-            <h4>Curso Presencial</h4>
-          </div>
+      </div>
+    </section>
+    <section
+      class="education container-fluid d-flex justify-content-center p-5"
+    >
+      <div class="education-content d-flex flex-column justify-content-between">
+        <div
+          class="education-header d-flex justify-content-between align-items-baseline mb-5"
+        >
+          <h1><strong>Educação Canábica</strong></h1>
+          <img src="images/hempatia-logo.png" alt="" />
+        </div>
+        <div class="education-text">
+          <p id="default" class="mb-5">
+            A HemPatia comprometida com a
+            <strong>promoção da educação</strong> e da
+            <strong>conscientização</strong> da sua sociedade, nossa missão vai
+            além do simples ensino, estamos determinados a impactar e
+            transformar a realidade proibicionista e não regulamentada que
+            enfrentamos hoje no Brasil.
+          </p>
+          <p id="classroom_course" style="display: none">
+            TEXTO CURSO PRESENCIAL
+          </p>
+          <p id="online_course" style="display: none">TEXTO CURSO ONLINE</p>
+          <p id="e-book" style="display: none">TEXTO E-BOOK</p>
+        </div>
+        <div class="education-buttons">
+          <ul class="d-flex flex-row justify-content-around">
+            <li>
+              <button type="button" onclick="toggleTextClassroomCourse()">
+                Curso Presencial
+              </button>
+            </li>
+            <li>
+              <button type="button" onclick="toggleTextOnlineCourse()">
+                Curso Online
+              </button>
+            </li>
+            <li>
+              <button type="button" onclick="toggleTextEBook()">E-Book</button>
+            </li>
+          </ul>
         </div>
       </div>
     </section>
-    <section class="section-default container-fluid py-5 font-desktop p-5">
-      <div class="row pink-border p-5">
-        <div class="col-md-5 form-online-appointment">
-          <h2 class="text-center mb-3 mb-sm-3 mb-md-3 mb-xxl-5">
-            <strong>AGENDE SUA CONSULTA ONLINE</strong>
-          </h2>
-          <form class="online-appointment p-5 d-flex flex-column">
-            <div class="mb-3 mb-sm-3 mb-md-3 mb-xxl-5">
-              <input
-                type="text"
-                class="form-control input text-center"
-                id="fromName"
-                name="nome"
-                placeholder="Nome"
-                required
-              />
-            </div>
-            <div class="mb-3 mb-sm-3 mb-md-3 mb-xxl-5">
-              <input
-                type="tel"
-                class="form-control input text-center"
-                id="tel"
-                name="telefone"
-                placeholder="Whatsapp"
-                required
-              />
-            </div>
-            <div class="mb-3 mb-sm-3 mb-md-3 mb-xxl-5">
-              <input
-                type="tel"
-                class="form-control input text-center"
-                id="mail"
-                name="telefone"
-                placeholder="Email"
-                required
-              />
-            </div>
-            <div class="mb-3 mb-sm-3 mb-md-3 mb-xxl-5 radio-input">
-              <h5 class="text-center mb-3 mb-sm-3 mb-md-3 mb-xxl-5">
-                <strong>Tem receita médica?</strong>
-              </h5>
-              <fieldset class="d-flex flex-column">
-                <div class="d-flex justify-content-around">
-                  <label for="radio-yes"
-                    ><input type="radio" name="radio" />SIM</label
-                  >
-                  <label for="radio-no"
-                    ><input type="radio" name="radio" />NÃO</label
-                  >
+    <section class="education-animated">
+      <div></div>
+    </section>
+    <section
+      class="medical-appointment container-fluid d-flex justify-content-around align-items-center pt-5"
+    >
+      <div class="col-md-5 appointment-text">
+        <div class="appointment-title">
+          <h3>Comece sua jornada de recuperação<br />com o óleo medicinal.</h3>
+          <h2>Agende a sua consulta!</h2>
+        </div>
+        <div class="appointment-info mt-4">
+          <ul class="d-flex flex-column justify-content-around">
+            <li class="info-list p-2">
+              <div class="d-flex align-items-center">
+                <div class="list-image">
+                  <img src="images/2.svg" alt="" />
                 </div>
-              </fieldset>
-            </div>
-            <input
-              class="btn btn-primary mb-3 mb-sm-3 mb-md-3 mb-xxl-5 text-center align-self-center text-center"
-              type="button"
-              id="sendButton"
-              value="Enviar"
-              onclick="COLOCAR FUNÇÃO AQUI"
-              disabled
-            />
-          </form>
+                <div class="list-description p-2 ml-4">
+                  <div class="description-title">
+                    <span>Prescrições médicas 100% digital</span>
+                  </div>
+                  <div class="description-text pt-1">
+                    <span
+                      >médicos associados que prescrevem canabidiol para uma
+                      consulta 100% online, sem sair de casa.</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="info-list p-2">
+              <div class="d-flex align-items-center">
+                <div class="list-image">
+                  <img src="images/1.svg" alt="" />
+                </div>
+                <div class="list-description p-2 ml-4">
+                  <div class="description-title">
+                    <span>Autorização da Anvisa em 24h</span>
+                  </div>
+                  <div class="description-text pt-1">
+                    <span
+                      >Estaremos aqui para ajudar com toda a burocracia de
+                      maneira ágil e simplificada.</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="info-list p-2">
+              <div class="d-flex align-items-center">
+                <div class="list-image">
+                  <img src="images/3.svg" alt="" />
+                </div>
+                <div class="list-description p-2 ml-4">
+                  <div class="description-title">
+                    <span>Dosagem Individual</span>
+                  </div>
+                  <div class="description-text pt-1">
+                    <span
+                      >Especialistas preparados para ajustar a dosagem para
+                      atender exclusivamente ás suas necessidades.</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
         </div>
-        <div class="col-md-6 placeholder"></div>
+        <div class="appointment-button mt-4">
+          <button>iniciar o tratamento</button>
+        </div>
+      </div>
+      <div class="col-md-5 appointment-image-background">
+        <img src="images/medical-appointment.png" alt="" />
       </div>
     </section>
-    <section class="section-default container-fluid py-5 font-desktop p-5">
-      <div class="row pink-border p-5">
-        <div class="col-md-5 form-contact-us">
+    <section class="contact-us container-fluid py-5 p-5">
+      <div class="row p-5 d-flex justify-content-around">
+        <div class="col-md-5 d-flex flex-column">
+          <img src="images/contact-us-image.png" alt="" />
+        </div>
+        <div class="col-md-5 contact-us-form py-5">
           <h2 class="text-center mb-3 mb-sm-3 mb-md-3 mb-xxl-5">
             <strong>FALE COM NOSSO TIME</strong>
           </h2>
-          <form class="contact-us p-5 d-flex flex-column">
-            <div class="mb-3 mb-sm-3 mb-md-3 mb-xxl-5">
-              <input
-                type="text"
-                class="form-control input text-center"
-                id="fromName"
-                name="nome"
-                placeholder="Nome"
-                required
-              />
-            </div>
-            <div class="mb-3 mb-sm-3 mb-md-3 mb-xxl-5">
-              <input
-                type="tel"
-                class="form-control input text-center"
-                id="tel"
-                name="telefone"
-                placeholder="Whatsapp"
-                required
-              />
-            </div>
-            <div class="mb-3 mb-sm-3 mb-md-3 mb-xxl-5">
-              <input
-                type="tel"
-                class="form-control input text-center"
-                id="mail"
-                name="telefone"
-                placeholder="Email"
-                required
-              />
-            </div>
-            <div class="mb-3 mb-sm-3 mb-md-3 mb-xxl-5">
-              <textarea
-                class="form-control custom-textarea text-center"
-                id="msg"
-                name="mensagem"
-                rows="8"
-                placeholder="Mensagem"
-                required
-              ></textarea>
-            </div>
+          <form class="p-4 d-flex flex-column justify-content-around h-100">
+            <input
+              type="text"
+              class="form-control input text-center"
+              id="fromName"
+              name="nome"
+              placeholder="Nome"
+              required
+            />
+            <input
+              type="tel"
+              class="form-control input text-center"
+              id="tel"
+              name="telefone"
+              placeholder="Whatsapp"
+              required
+            />
+            <input
+              type="email"
+              class="form-control input text-center"
+              id="mail"
+              name="mail"
+              placeholder="Email"
+              required
+            />
+            <textarea
+              class="form-control custom-textarea text-center"
+              id="msg"
+              name="mensagem"
+              rows="5"
+              placeholder="Mensagem"
+              required
+            ></textarea>
             <input
               class="btn btn-primary mb-3 mb-sm-3 mb-md-3 mb-xxl-5 text-center align-self-center"
               type="button"
               id="sendButton"
               value="Enviar"
-              onclick="COLOCAR FUNÇÃO AQUI"
+              onclick="sendMail()"
               disabled
             />
           </form>
@@ -226,7 +243,7 @@
     </section>
     <footer class="contact text-light py-2 border-top border-dark border-5">
       <div class="container text-center">
-        <div class="contactContent d-flex justify-content-evenly">
+        <div class="contact-content d-flex justify-content-between">
           <a
             href="https://www.instagram.com/hempatiabr/"
             class="text-light me-3"
@@ -248,12 +265,9 @@
         </div>
       </div>
     </footer>
-
-    <script src="scripts/buttonEnable.js"></script>
-    <script src="scripts/inputMask.js"></script>
-    <script src="scripts/email.js"></script>
-    <script src="scripts/copyToClipboard.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
   </body>
+
+  <script src="scripts/email.js"></script>
+  <script src="scripts/buttonEnable.js"></script>
+  <script src="scripts/openDiv.js"></script>
 </html>

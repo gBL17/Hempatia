@@ -1,15 +1,15 @@
-function enableBotao() {
-  var selector = document.getElementById("selector");
+function enableButton() {
   var name = document.getElementById("fromName");
   var tel = document.getElementById("tel");
+  var mail = document.getElementById("mail");
   var msg = document.getElementById("msg");
 
   var sendButton = document.getElementById("sendButton");
 
   if (
-    selector.value !== "" &&
     name.value !== "" &&
     tel.value !== "" &&
+    mail.value !== "" &&
     msg.value !== ""
   ) {
     sendButton.disabled = false;
@@ -18,10 +18,10 @@ function enableBotao() {
   }
 }
 
-document.getElementById("selector").addEventListener("input", enableBotao);
-document.getElementById("fromName").addEventListener("input", enableBotao);
-document.getElementById("tel").addEventListener("input", enableBotao);
-document.getElementById("msg").addEventListener("input", enableBotao);
+document.getElementById("fromName").addEventListener("input", enableButton);
+document.getElementById("tel").addEventListener("input", enableButton);
+document.getElementById("mail").addEventListener("input", enableButton);
+document.getElementById("msg").addEventListener("input", enableButton);
 
 // Chama a função para garantir que o botão esteja corretamente habilitado/desabilitado no início
-enableBotao();
+enableButton();

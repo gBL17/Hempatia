@@ -1,8 +1,10 @@
 * {
-  margin: 0;
   padding: 0;
+  margin: 0;
   font-family: "Poppins";
 }
+
+/* Landing Page Background - Section */
 
 .hero-section {
   background-image: url("images/Fundo.png");
@@ -13,65 +15,43 @@
   border-bottom: 5px solid black;
 }
 
-.online-appointment {
-  background-color: #ac24dc;
-  border-radius: 35px;
-}
-
-.contact-us {
-  background-color: #ac036c;
-  border-radius: 35px;
-}
-
-.section-default {
-  background: #e3e3db;
-  width: 100%;
-  min-width: 50vh;
-}
-
-.sizing {
-  min-height: 50vh;
-}
-
-.pink-border {
-  border: 5px solid #8a55e1;
-}
-
-.courses {
-  border: solid white 5px;
-}
-
-.video {
-  min-height: 80vh;
-}
-
-.video-shadow {
-  position: relative;
-  background-color: #003629;
-  height: 100%;
+/* Who are we - Section  */
+.who-are-we {
+  background-color: #e3e3db;
+  height: 65vh;
+  display: flex;
+  justify-content: space-around;
 }
 
 .video-content {
-  position: absolute;
-  background-color: #72c305;
-  height: 100%;
-  width: 100%;
-  top: 5%;
-  right: 2%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  height: 80%;
+  width: 80%;
 }
 
-.video-content iframe {
+.video-shadow {
+  background-color: #003629;
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  width: 80%;
+  height: 100%;
+}
+
+.video {
+  background-color: #72c305;
+  width: 120%;
+  margin: -10%;
+}
+
+.video iframe {
   aspect-ratio: 16/9;
-  width: 100%;
+  width: 83.5%;
+  padding: 4% 0;
 }
 
 .text-field {
-  color: #002e23;
-  padding: 20px;
-  border-radius: 10px;
+  height: 80%;
+  width: 70%;
+  color: #003629;
 }
 
 .text-field h2 {
@@ -80,215 +60,175 @@
 }
 
 .text-field p {
-  font-size: 30px;
+  font-size: 26px;
+  text-align: justify;
 }
 
-.form-online-appointment {
-  color: #002e23;
+/* Education - Section*/
+
+.education {
+  background-color: #d8d8d0;
+  height: 76vh;
+}
+
+.education-content {
+  width: 80%;
+}
+
+.education-header {
+  width: 100%;
+  color: #72c305;
+}
+
+.education-header img {
+  width: 15%;
+}
+
+.education-text p {
+  font-size: 26px;
+  text-align: justify;
+}
+
+.education-text strong {
+  color: #72c305;
+}
+
+.education-buttons ul {
+  list-style-type: none;
+}
+
+.education-buttons button {
+  border: none;
+  background-color: #f1a20b;
+  color: #003629;
   font-weight: bold;
+  padding: 5%;
+  width: 200px;
+  border-radius: 25px;
 }
 
-.placeholder {
-  background-color: #72c305;
-  margin-left: 5%;
+.education-animated {
+  background-color: #d8d8d0;
 }
 
-.form-section {
-  min-height: 80vh;
-  background-image: url("images/FundoNovo.png");
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animated {
+  animation: slideDown 1s ease-in-out;
+}
+
+/* Medical Appointment - Section */
+
+.medical-appointment {
+  background-color: #e3e3db;
+  height: 95vh;
+}
+
+.appointment-title h3 {
+  color: #003629;
+  font-size: 32px;
+  text-align: center;
+}
+
+.appointment-title h2 {
+  color: #f1a20b;
+  font-weight: bold;
+  font-size: 36px;
+  text-align: center;
+}
+
+.appointment-info {
+  display: flex;
+  height: 50vh;
+}
+
+.list-image {
+  width: 20%;
+}
+
+.list-image img {
+  width: 110%;
+}
+
+.description-title {
+  font-size: 22px;
+  font-weight: bold;
+  color: #003629;
+}
+
+.description-text {
+  font-size: 18px;
+  color: #003629;
+  text-align: justify;
+}
+
+.info-list {
+  list-style: none;
+}
+
+.appointment-button button {
+  border: none;
+  background-image: linear-gradient(to right, #01a651, #8cc63f);
+  color: #003629;
+  font-size: 24px;
+  font-weight: bold;
+  padding: 2.2%;
+  width: 320px;
+  border-radius: 45px;
+}
+
+.appointment-image-background img {
   width: 100%;
 }
 
-.content {
+/* Contact us - Section */
+
+.contact-us {
+  background-color: #d8d8d0;
+  height: 95vh;
+}
+
+.contact-us-form {
+  background-color: #fc036c;
+  border-radius: 45px;
+}
+
+.contact-us-form h2 {
+  color: white;
+}
+
+.contact-us input {
+  border-radius: 15px;
+  height: 3rem;
+}
+
+.contact-us textarea {
+  border-radius: 15px;
+}
+
+.custom-form {
   display: flex;
   flex-direction: column;
-  height: 95%;
-  width: 80%;
-  margin: 2% auto;
-  justify-content: space-between;
-}
-
-.navContainer {
-  display: flex;
-  width: 70%;
-  height: 3rem;
-  margin: 0 auto;
-}
-
-.navBar {
-  width: 100%;
+  justify-content: space-around;
   height: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  margin: 10px; /* Ajuste as margens conforme necessário */
 }
 
-.navItem {
-  list-style-type: none;
-
-  --c: linear-gradient(#fff 0 0); /* update the color here */
-
-  padding-bottom: 0.15em;
-  background: var(--c), var(--c);
-  background-size: 0.3em 0.1em;
-  background-position: 50% 100%;
-  background-repeat: no-repeat;
-  transition: 0.3s linear, background-size 0.3s 0.2s linear;
-}
-
-.navItem:hover {
-  background-size: 40% 0.1em;
-  background-position: 10% 100%, 90% 100%;
-}
-
-.contatoField {
-  background-color: #71c305c2;
-  width: 28%;
-  height: 100%;
-  border-radius: 20px;
-  transform: translate(0, -20%);
-}
-
-.pointer:hover {
-  cursor: pointer;
-}
-
-.navItemLink {
-  text-decoration: none;
-  color: white;
-  font-size: 25px;
-}
-.carousel-inner {
-  border-radius: 15px;
-}
-
-.form-container {
-  background-color: #f1a20b;
-  border-radius: 15px;
-}
-
-.form-container h2 {
-  color: white;
-}
-
-select {
-  appearance: none;
-  outline: 10px red;
-  border: 0;
-  box-shadow: none;
-
-  flex: 1;
-  padding: 0 1em;
-  cursor: pointer;
-}
-
-select::-ms-expand {
-  display: none;
-}
-
-.select {
-  position: relative;
-  display: flex;
-  height: 3em;
-  border-radius: 0.25em;
-  overflow: hidden;
-}
-
-.select::after {
-  content: "\25BC";
-  position: absolute;
-  top: 0;
-  right: 0;
-  padding: 1em;
-  background-color: #dddddd;
-  transition: 0.25s all ease;
-  pointer-events: none;
-}
-.select:hover::after {
-  color: #f1a20b;
-}
-
-.input {
-  height: 3em;
-}
-
-.form-input {
-  width: 80%;
-}
-
-.radio-input {
-  color: white;
-}
-
-.btn {
-  background-color: white;
-  border: white;
-  width: 25%;
-  color: #f1a20b;
-  font-weight: bold;
-}
+/* Footer - Section */
 
 .contact {
   background-color: #003629;
 }
 
-.contactContent i {
+.contact-content i {
   font-size: 35px;
-}
-
-@media (max-width: 950px) {
-  .video {
-    margin-bottom: 10px;
-  }
-
-  .font-desktop h2 {
-    font-size: 18px;
-  }
-
-  .text-field p {
-    font-size: 12px;
-  }
-
-  .img-fluid {
-    margin-bottom: 10px;
-  }
-
-  .contactContent i {
-    font-size: 25px;
-  }
-
-  .form-container {
-    background-color: #f1a10ba6;
-  }
-
-  .input {
-    height: 2.5rem;
-  }
-
-  .form-container {
-    min-height: 550px;
-    margin: 0 auto 20px;
-    width: 95%;
-  }
-
-  .hpImage {
-    width: 50%;
-  }
-}
-
-@media (max-width: 1280px) {
-  .input {
-    height: 2rem;
-  }
-
-  .text-field h2 {
-    font-size: 22px;
-  }
-
-  .text-field p {
-    font-size: 18px;
-  }
 }
